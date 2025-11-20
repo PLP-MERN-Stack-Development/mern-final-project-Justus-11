@@ -1,0 +1,17 @@
+{
+  "name": "Final-project-hospital-booking-management-system-",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run start:backend\" \"npm run start:frontend\" \"npm run start:admin\"",
+    "start:backend": "npm run server --prefix Backend",
+    "start:frontend": "npm run dev --prefix Frontend",
+    "start:admin": "npm run dev --prefix Admin"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "dependencies": {
+    "react-toastify": "^11.0.5"
+  }
+}
