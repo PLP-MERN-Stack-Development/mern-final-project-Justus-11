@@ -1,0 +1,14 @@
+{
+  "name": "hospital-booking-monorepo-helper",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "server": "cd \"Final-project-hospital-booking-management-system-\\Backend\" && npm run server",
+    "frontend": "cd \"Final-project-hospital-booking-management-system-\\frontend\" && npm run dev",
+    "admin": "cd \"Final-project-hospital-booking-management-system-\\admin\" && npm run dev",
+    "dev": "npx concurrently \"npm:server\" \"npm:frontend\" \"npm:admin\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  }
+}
